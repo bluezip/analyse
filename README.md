@@ -23,5 +23,7 @@ var data        = {
 
 var analyse     = new Analyse(data);
 
-analyse.draw(err);
+analyse.draw(function(err){
+  console.log(err);
+});
 ~~~
