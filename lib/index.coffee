@@ -7,7 +7,7 @@ class app
 
   constructor: (@data)->
 
-  show: (cb)->
+  draw: (cb)->
 
     img   = gm( path.join('asserts','certificate.jpg') )
     .font( path.join('asserts','verdana.ttf') )
@@ -19,7 +19,8 @@ class app
     name_left   = 55
     value_left  = 250
     top         = 140
-    @data.chemical.forEach (v, i)->
+
+    @data.chemical.forEach (v)->
 
       top = top + 17
 

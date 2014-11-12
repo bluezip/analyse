@@ -19,7 +19,7 @@ describe 'Analyse report', ->
         output: path.join('asserts','test.jpg')
 
       analyse = new Analyse(data);
-      analyse.show (err,res)->
+      analyse.draw (err,res)->
         should.not.exist(err)
         (fs.existsSync(data.output)).should.be.true
 
