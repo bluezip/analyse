@@ -1,0 +1,31 @@
+{
+  "name": "bluezip-analyse",
+  "version": "0.0.1",
+  "description": "display chemical analyse",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --watch app/**/*.spec.js",
+    "start": "node app",
+
+    "prepublish": "npm run complied-coffee",
+    "watch": "npm run watch-coffee & npm run test",
+
+    "complied-coffee": "./node_modules/.bin/coffee -o ./app/ -c ./src/app/",
+    "watch-coffee": "./node_modules/.bin/coffee -o ./app/ -cw ./src/"
+  },
+  "keywords": [
+    "display",
+    "chemical",
+    "report",
+    "display"
+  ],
+  "author": "bluezip",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "gm": "^1.17.0",
+    "mocha": "^2.0.1",
+    "nodemon": "^1.2.1",
+    "should": "^4.3.0"
+  }
+}
