@@ -5,7 +5,9 @@ should    = require 'should'
 
 describe 'Analyse report', ->
 
-  # check module should
-  describe 'test should', ->
-    it 'should is not exist', ->
-      (true).should.be.a.true
+  describe 'image', ->
+
+    it 'show data from json should not exist', ->
+
+      (true).should.be.true;
+
