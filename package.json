@@ -1,11 +1,11 @@
 {
   "name": "bluezip-analyse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "display chemical analyse",
   "main": "app/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --watch app/**/*.spec.js",
-    "prepublish": "npm run build-coffee & npm run test",
+    "postinstall": "npm run build-coffee & npm run test",
     "watch": "npm run watch-coffee & npm run test",
 
     "build-coffee": "./node_modules/.bin/coffee -o ./app/ -c ./lib/",
