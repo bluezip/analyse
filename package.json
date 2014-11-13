@@ -26,5 +26,9 @@
     "mocha": "^2.0.1",
     "nodemon": "^1.2.1",
     "should": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bluezip/analyse.git"
   }
 }
