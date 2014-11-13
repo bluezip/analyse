@@ -11,6 +11,8 @@ describe 'Analyse report', ->
 
     it 'show data from json should not exist', ->
       data    =
+        source: path.join 'asserts', 'certificate.jpg'
+        font: path.join 'asserts', 'verdana.ttf'
         ref: 'REF12345'
         chemical: [
           {name: 'Silver (Ag)', value: '95.34'}

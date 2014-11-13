@@ -1,7 +1,5 @@
 'use strict'
 gm    = require 'gm'
-path  = require 'path'
-
 
 class app
 
@@ -9,8 +7,8 @@ class app
 
   draw: (cb)->
 
-    img   = gm( path.join('asserts','certificate.jpg') )
-    .font( path.join('asserts','verdana.ttf') )
+    img   = gm( @data.source )
+    .font( @data.font )
     .fill('#0000ff')
     .fontSize(12);
 
