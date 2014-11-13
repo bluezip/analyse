@@ -1,6 +1,6 @@
 {
   "name": "bluezip-analyse",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "display chemical analyse",
   "main": "app/index.js",
   "scripts": {
