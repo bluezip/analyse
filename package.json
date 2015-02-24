@@ -1,14 +1,13 @@
 {
   "name": "bluezip-analyse",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "display chemical analyse",
   "main": "app/index.js",
   "scripts": {
     "watch-test": "./node_modules/.bin/mocha --watch app/**/*.spec.js",
     "test": "./node_modules/.bin/mocha app/**/*.spec.js",
-    "postinstall": "npm run test",
+    "install": "./node_modules/.bin/coffee -o ./app/ -c ./lib/",
     "watch": "npm run watch-coffee & npm run watch-test",
-    "preinstall": "./node_modules/.bin/coffee -o ./app/ -c ./lib/",
     "watch-coffee": "./node_modules/.bin/nodemon --watch *.coffee --ext coffee --exec 'npm run build-coffee'"
   },
   "keywords": [
@@ -21,13 +20,15 @@
   "license": "ISC",
   "dependencies": {
     "coffee-script": "^1.8.0",
-    "gm": "^1.17.0",
-    "mocha": "^2.0.1",
-    "nodemon": "^1.2.1",
-    "should": "^4.3.0"
+    "gm": "^1.17.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/bluezip/analyse.git"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^4.3.0",
+    "nodemon": "^1.2.1"
   }
 }
